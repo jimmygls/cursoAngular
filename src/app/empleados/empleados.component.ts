@@ -12,6 +12,7 @@ export class EmpleadosComponent implements OnInit {
   public empleado: Empleado;
   public trabajadores: Array<Empleado>;
   public trabajador_externo: boolean;
+  public color:string;
 
   constructor() {
     this.empleado = new Empleado('Jimmy', 37, 'Desa', true);
@@ -22,6 +23,7 @@ export class EmpleadosComponent implements OnInit {
       new Empleado('Jose', 47, 'Adm', true)
     ];
     this.trabajador_externo = true;
+    this.color='green';
   }
 
   ngOnInit() {
