@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { FrutaComponent } from './fruta/fruta.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FrutaComponent,
-    EmpleadosComponent
+    EmpleadosComponent,
+    HomeComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,14 @@
   <h3>
     {{ title }}!
   </h3>
-  
+  <hr>
+  <nav>
+    <a [routerLink]="['/pagina-princioal']" >Home</a>
+    <a [routerLink]="['/fruta']">Frutas</a>
+    <a [routerLink]="['/empleado']">Empleados</a>
+    <a [routerLink]="['/contacto']">Contactos</a>
+  </nav>
+  <hr>
   <!--<app-fruta></app-fruta>
     <app-empleados></app-empleados>-->
     <router-outlet></router-outlet>
