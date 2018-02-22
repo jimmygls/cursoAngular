@@ -6,3 +6,8 @@
 .fondoVerde{
     background:lightgreen !important;
 }
+
+.activado{
+    font-weight: bold;
+    background: khaki;
+}
