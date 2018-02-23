@@ -1,5 +1,8 @@
 <p>{{titulo}}</p>
 <br>
+fecha : {{fecha|date:'MM dd yyyy'}}
+<br>
+<br>
 <input type="text" [(ngModel)]="prenda_a_guardar">
 <button (click)="guardarPrenda()">Añadir Prenda</button>
 <p *ngIf="prenda_a_guardar" ><strong> La prenda a gruadar es: {{prenda_a_guardar}}</strong></p>

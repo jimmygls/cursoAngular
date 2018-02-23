@@ -9,23 +9,27 @@ import { RopaService } from '../servicios/ropa.service';
 })
 export class HomeComponent implements OnInit {
   public titulo = 'Pagina Principal'
-  public listado_ropa:Array<string>;
-  public prenda_a_guardar:string;
+  public listado_ropa: Array<string>;
+  public prenda_a_guardar: string;
+  public fecha;
+
   //se inyecta el servicio
   constructor(private _ropaService: RopaService) {
+    this.fecha=new Date(2017,4,15);
   }
 
   ngOnInit() {
-    this.listado_ropa=this._ropaService.getRopa();
+    this.listado_ropa = this._ropaService.getRopa();
     console.log(this.listado_ropa);
+    this.fecha=new Date(2017,4,15);
   }
 
-  guardarPrenda(){
+  guardarPrenda() {
     this._ropaService.addRopa(this.prenda_a_guardar);
-    this.prenda_a_guardar=null;
+    this.prenda_a_guardar = null;
   }
 
-  eliminarPrenda(indice:number){
+  eliminarPrenda(indice: number) {
     this._ropaService.removeRopa(indice);
   }
 
