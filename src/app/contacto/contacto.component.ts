@@ -22,4 +22,13 @@ export class ContactoComponent implements OnInit {
       console.log("parametro " + this.parametro);
     });
   }
+
+  redirigir(){
+    this._router.navigate(['/contacto','ppara']);
+  }
+
+  redirigirDos(){
+    this._router.navigate(['/pagina-principal']);
+  }
+  
 }

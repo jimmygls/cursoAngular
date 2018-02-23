@@ -8,7 +8,7 @@ import { ContactoComponent } from '../contacto/contacto.component';
 
 export const appRoutes: Routes = [
   {path:'',component:HomeComponent},//este es home
-  {path:'pagina-princioal',component:HomeComponent},//ruta de pagina principal
+  {path:'pagina-principal',component:HomeComponent},//ruta de pagina principal
   {path:'fruta',component:FrutaComponent},//ruta de fruta 
   {path:'empleado',component:EmpleadosComponent},//ruta de empleado
   {path:'contacto',component:ContactoComponent},//ruta de contacto  
