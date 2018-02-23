@@ -5,6 +5,9 @@ fecha uno : {{fecha|date:'MM dd yyyy'|uppercase}}
 fecha dos: {{fecha|date:'fullDate'|uppercase}}
 -
 fecha tres: {{fecha|date:'fullDate'|lowercase}}
+
+<br>
+{{5|conversor:5}}
 <br>
 <br>
 <input type="text" [(ngModel)]="prenda_a_guardar">
@@ -15,5 +18,5 @@ fecha tres: {{fecha|date:'fullDate'|lowercase}}
   <li *ngFor="let prenda of listado_ropa; let i=index">
     {{i}} - {{prenda}}
     <button (click)="eliminarPrenda(i)">Eliminar</button>
-  </li>
+  </li> 
 </ul>
