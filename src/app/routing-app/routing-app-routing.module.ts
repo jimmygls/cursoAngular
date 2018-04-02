@@ -14,7 +14,7 @@ export const appRoutes: Routes = [
   {path:'empleado',component:EmpleadosComponent},//ruta de empleado
   {path:'contacto',component:ContactoComponent},//ruta de contacto  
   {path:'contacto/:page',component:ContactoComponent},//ruta de contacto que recibe un parametro 
-  {path:'coches',component:CochesComponent},//ruta para coches
+  {path:'coches',component:CochesComponent},//ruta para pagina de coches
   {path:'**',component:HomeComponent}//esta es la pagina cuando se produce un error
 ];
  
