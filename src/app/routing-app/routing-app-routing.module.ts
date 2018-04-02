@@ -17,6 +17,6 @@ export const appRoutes: Routes = [
   {path:'coches',component:CochesComponent},//ruta para coches
   {path:'**',component:HomeComponent}//esta es la pagina cuando se produce un error
 ];
-
+ 
 export const appRoutingProviders:any[]=[];
 export const routing:ModuleWithProviders=RouterModule.forRoot(appRoutes); 
