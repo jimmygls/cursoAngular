@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Coche} from './coche';
+import { Coche } from './coche';
 
 @Component({
   selector: 'app-coches',
@@ -8,9 +8,16 @@ import {Coche} from './coche';
 })
 export class CochesComponent implements OnInit {
 
-  constructor() { }
-
+  public coche: Coche;
+  constructor() {
+    this.coche = new Coche("", 0, "");
+  }
+  onSubmit() {
+    console.log(this.coche);
+  }
   ngOnInit() {
   }
+
+
 
 }
