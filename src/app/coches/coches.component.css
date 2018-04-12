@@ -1,0 +1,16 @@
+div{
+float: left;
+}
+
+form{
+    width: 150px;
+}
+
+input [type="text"], spam{
+    display: block;
+    width: 100%;
+}
+
+.listado{
+    margin-left: 30px;
+}
